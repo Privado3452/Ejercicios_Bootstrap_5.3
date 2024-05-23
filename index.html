@@ -50,8 +50,8 @@
                   Cuenta
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Iniciar sesion</a></li>
-                  <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar sesion</a></li>
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">Registrarse</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="#">Ayuda</a>
@@ -77,6 +77,102 @@
         </div>
       </nav>
       <!-- Content menu -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                 <!-- Formulario de iniciar sesion -->
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                 
+                 
+                </form>
+                 <!-- Formulario de iniciar sesion -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Ingresar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  Fin Modal -->
+        <!-- Modal registro -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" >Registrarse</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3 ">
+            <label for="disabledSelect" class="form-label">Tipo de Documento</label>
+            <select id="disabledSelect" class="form-select">
+              <option>Cedula de Ciudadania</option>
+              <option>Tarjeta de Identidad</option>
+              <option>Permiso Especial de Permanencia</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Numero de Documento</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Nombres</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Apellidos</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Email</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Celular</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          
+        </form> 
+          <!-- Formulario fin de registro -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Registrarse</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Modal Fin registro -->
       <!-- content carousel -->
       
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -224,7 +320,7 @@
                   <h5 class="card-title">Combo No.1</h5>
                   <p class="card-text">Smartwatch + Diademas</p>
                   <p class="card-text"><big>$300.000</big></p>
-                  <a href="#" class="btn btn-primary">Seleccionar</a>
+                  <a href="#" class="btn btn-danger">Seleccionar</a>
                 </div>
               </div>
 
@@ -234,7 +330,7 @@
                   <h5 class="card-title">Combo No.2</h5>
                   <p class="card-text">Proyector + Control mini</p>
                   <p class="card-text"><big>$500.000</big></p>
-                  <a href="#" class="btn btn-primary">Seleccionar</a>
+                  <a href="#" class="btn btn-danger">Seleccionar</a>
                 </div>
               </div>
 
@@ -244,7 +340,7 @@
                   <h5 class="card-title">Combo No.3</h5>
                   <p class="card-text">Router de internet</p>
                   <p class="card-text"><big>$150.000</big></p>
-                  <a href="#" class="btn btn-primary">Seleccionar</a>
+                  <a href="#" class="btn btn-danger">Seleccionar</a>
                 </div>
               </div>
 
@@ -254,7 +350,7 @@
                   <h5 class="card-title">Combo No.4</h5>
                   <p class="card-text">Smartwatch + Mini Audifonos</p>
                   <p class="card-text"><big>$200.000</big></p>
-                  <a href="#" class="btn btn-primary">Seleccionar</a>
+                  <a href="#" class="btn btn-danger">Seleccionar</a>
                 </div>
               </div>
 
